@@ -1,0 +1,17 @@
+@import "../Main/Main.css";
+
+.minute div {
+  text-decoration: none;
+  outline: none;
+  color: rgb(17, 17, 17);
+}
+.minute div:hover {
+  color: #a2c3ff;
+  text-decoration: none;
+  transform: scale(102%);
+  transition: all 0.1s ease-in-out;
+}
+
+.minute a {
+  text-decoration: none;
+}

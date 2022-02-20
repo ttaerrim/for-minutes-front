@@ -1,0 +1,359 @@
+.bg {
+  min-height: 60vh;
+  background-color: #ffffff;
+}
+
+.main-contents {
+  padding: 1%;
+}
+
+.main-contents h1 {
+  text-align: center;
+}
+
+.container {
+  padding-bottom: 30px;
+}
+
+/*---------------------------------------
+  Typorgraphy              
+-----------------------------------------*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-style: normal;
+  font-weight: 200;
+  letter-spacing: 0px;
+}
+
+h1 {
+  color: #3d3d3f;
+  font-size: 50px;
+  line-height: normal;
+}
+
+h2 {
+  color: #575757;
+  font-size: 40px;
+  line-height: 52px;
+  margin-top: 0px;
+}
+
+h4 {
+  color: #797979;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+p {
+  color: #878787;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 25px;
+  letter-spacing: 0.2px;
+}
+
+strong,
+span {
+  color: #878787;
+  font-weight: normal;
+}
+
+
+
+/*---------------------------------------
+  Mobile Responsive styles              
+-----------------------------------------*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #home {
+    height: 50vh;
+  }
+}
+
+@media (min-width: 667px) and (max-width: 767px) {
+  #home {
+    height: 140vh;
+  }
+}
+
+@media (min-width: 568px) and (max-width: 665px) {
+  #home {
+    height: 190vh;
+  }
+}
+
+@media (max-width: 980px) {
+  h1 {
+    font-size: 33px;
+  }
+
+  #work .work-thumb {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 30px;
+    line-height: normal;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .custom-navbar {
+    background-color: #ffffff;
+    box-shadow: 0 40px 100px rgba(0, 0, 0, 0.2);
+    padding-top: 0px;
+    padding-bottom: 5px;
+  }
+
+  .custom-navbar .nav {
+    padding-bottom: 10px;
+  }
+
+  .custom-navbar .nav li a {
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 580px) {
+  #about .about-thumb {
+    margin-top: 0px;
+  }
+
+  .about-thumb .social-icon {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 357px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  #about .col-md-4 a {
+    width: 85px;
+    height: 85px;
+  }
+}
+
+/********************** box *********************/
+.boxes {
+  margin: 20px;
+  margin-top: 50px;;
+  overflow: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+}
+
+.boxes1 {
+  margin: auto;
+  margin-top: 10vh;
+  margin-bottom: 20vh;
+  min-height: 130vh;
+  background-color: rgb(255, 255, 255);
+  overflow: auto;
+  box-shadow: 0px 12px 18px -6px black;
+  border-radius: 10px 10px 10px 10px;
+  width: 100vh;
+}
+
+.boxes3 {
+  margin-left: 5%;
+  background-color: rgb(255, 255, 255);
+  overflow: auto;
+  padding: 3%;
+  box-shadow: -2px 10px 10px -6px rgb(197, 197, 197);
+  width: 70%;
+  margin: auto;
+}
+
+.grids {
+  max-width: 80%;
+  margin: auto;
+  margin-bottom: 150px;
+}
+
+
+
+/* =============== PREDEFINED CONTENT ALIGN =============== */
+.margin-left {
+  margin-left: 1em !important;
+  margin-right: 0;
+}
+.margin-right {
+  margin-left: 0;
+  margin-right: 1em !important;
+}
+/* ============================== LAYOUT ============================== */
+/* =============== LAYOUT - GENERAL LAYOUT =============== */
+.container {
+  position: relative;
+}
+[layout="row"] {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.fsr {
+  -webkit-flex-shrink: 0;
+  flex-shrink: 0;
+}
+.fg {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+}
+.fw {
+  flex-wrap: wrap;
+}
+.verticalStretch {
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+}
+.verticalCenter {
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.nino-btn {
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  text-align: center;
+  border: 2px solid #fff;
+  font-size: 12px;
+  line-height: 100%;
+}
+.nino-btn:hover {
+  color: #fff;
+}
+.bg-white {
+  background-color: #fff !important;
+}
+
+/* =============== LAYOUT - CONTENT AREA =============== */
+section {
+  padding: 80px 0;
+}
+#nino-slider .nino-sectionHeading {
+  font-size: 110px;
+  color: #fff;
+}
+#nino-slider .nino-sectionHeading .nino-subHeading {
+  font-size: 55px;
+}
+#nino-slider .nino-sectionHeading:after {
+  background: #fff;
+}
+.nino-sectionHeading {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 1;
+  position: relative;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #333;
+}
+.nino-sectionHeading:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 50px;
+  height: 2px;
+  background: #3e92ff;
+  transform: translateX(-50%);
+}
+.nino-sectionHeading .nino-subHeading {
+  display: block;
+  text-transform: none;
+  font-weight: 400;
+  font-family: "Kaushan Script", cursive;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.nino-sectionDesc {
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto 40px;
+}
+
+/* =============== SECTION SERVICES =============== */
+#nino-services .nino-icon {
+  font-size: 30px;
+  margin-right: 20px;
+  color: #95e1d3;
+}
+#nino-services .item:not(:nth-last-child(-n + 3)) {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 50px;
+  padding-bottom: 40px;
+}
+#nino-services .nino-serviceTitle {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+/************Tab class *************/
+#tab-align {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*******gallery******/
+
+.gallery{
+  position:relative;
+  height: 100%;
+  width:90%;
+  margin:auto;
+  padding:45px 0;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap:2vh;
+  grid-auto-flow: dense;
+}
+
+.gallery .img{
+  position: relative;
+  height:100%;
+  width:100%;
+  overflow:hidden;
+  border-radius: 10px;
+  border: medium solid rgb(240, 240, 240);
+  box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+}
+
+.gallery .img:first-child{
+  grid-column-start: span 2;
+  grid-row-start: span 2;
+}
+
+.gallery .img:nth-child(2n+3){
+  grid-row-start: span 2;
+}
+
+.gallery .img:nth-child(4n+5){
+  grid-row-start: span 2;
+  grid-column-start: span 1;
+}
+
+.gallery .img:nth-child(6n+7){
+  grid-column-start: span 2;
+  grid-row-start: span 2;
+}

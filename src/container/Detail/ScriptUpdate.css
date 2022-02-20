@@ -1,0 +1,12 @@
+@import "../Main/Main.css";
+
+.script_update {
+  width: 70%;
+  margin: 0px auto;
+  margin-top: 2em;
+  padding: 20px;
+}
+
+.form-floating {
+  margin-bottom: 2em;
+}

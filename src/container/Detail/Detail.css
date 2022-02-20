@@ -1,0 +1,60 @@
+@import '../Main/Main.css';
+
+.summary_boxes {
+    margin-left: 5%;
+    margin-top: 10%;
+    background-color: rgb(255, 255, 255);
+    overflow: auto;
+    padding: 1%;
+    width: 70%;
+    margin: auto;
+  }
+
+  
+/********** Detail click event********* */
+
+details {
+    margin-bottom: 1rem;
+    margin-top: 5%;
+  }
+  
+  details > summary {
+    background: rgb(255, 255, 255);
+    padding: 1rem;
+    outline: 0;
+    cursor: pointer;
+    transition: background 0.5s;
+  }
+  
+  details > summary::-webkit-details-marker {
+    background: url(https://marshall-storage.tistory.com/attachment/cfile29.uf@993E16335F785C0037CB43.svg)
+      no-repeat center;
+    background-size: contain;
+    color: transparent;
+    transform: rotate3d(0, 0, 1, 90deg);
+    transition: transform 0.25s;
+  }
+  
+  details[open] > summary::-webkit-details-marker {
+    transform: rotate3d(0, 0, 1, 180deg);
+  }
+  
+  details[open] > summary {
+    background: rgb(255, 255, 255);
+  }
+  
+  details[open] > summary ~ * {
+    animation: reveal 0.5s;
+  }
+  
+  @keyframes reveal {
+    from {
+      opacity: 0;
+      transform: translate3d(0, -10px, 0);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
