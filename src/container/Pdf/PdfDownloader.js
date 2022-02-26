@@ -1,6 +1,6 @@
 import React from "react";
 import { saveAs } from "file-saver";
-import { pdf, PDFViewer, PDFDownloadLink } from "@react-pdf/renderer";
+import { pdf } from "@react-pdf/renderer";
 
 import { Button, Flex } from "gestalt";
 import Pdf from "./Pdf";

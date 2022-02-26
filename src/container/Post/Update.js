@@ -79,8 +79,6 @@ const Update = (props) => {
     return new_date;
   };
 
-  //   const handleChange = (meeting_date) => meeting_date;
-
   const handleSubmit = async () => {
     let formData = new FormData();
 
