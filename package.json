@@ -12,6 +12,10 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "@types/jest": "^27.4.1",
+    "@types/node": "^17.0.21",
+    "@types/react": "^17.0.39",
+    "@types/react-dom": "^17.0.11",
     "animate.css": "^4.1.1",
     "aos": "^2.3.4",
     "axios": "^0.21.1",
@@ -30,6 +34,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.3",
     "react-swipeable-views": "^0.14.0",
+    "typescript": "^4.5.5",
     "url-exist": "^3.0.0",
     "web-vitals": "^1.0.1",
     "wow.js": "^1.2.2"
