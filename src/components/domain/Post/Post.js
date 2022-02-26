@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 
 import Aos from "aos";
 import "aos/dist/aos.css";
-import "./Post.css";
 import { Box, TextField, Button, SelectList, Text } from "gestalt";
 import "gestalt/dist/gestalt.css";
 import DatePicker from "gestalt-datepicker";
@@ -12,7 +11,7 @@ import "gestalt-datepicker/dist/gestalt-datepicker.css";
 import axios from "axios";
 
 import { useHistory } from "react-router";
-
+import styles from "./Post.module.scss";
 
 axios.defaults.xsrfCookieName = "csrftoken";
 axios.defaults.xsrfHeaderName = "X-CSRFToken";
@@ -109,8 +108,8 @@ const Post = () => {
 
   return (
     <React.Fragment>
-      <div className="grids">
-        <div className="boxes_post" data-aos="fade-down">
+      <div className={styles.grids}>
+        <div className={styles.boxes_post} data-aos="fade-down">
           <Box
             display="flex"
             marginStart={-3}

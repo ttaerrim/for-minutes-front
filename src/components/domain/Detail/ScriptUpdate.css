@@ -1,4 +1,4 @@
-@import "../Main/Main.css";
+@import "components/domain/Main/Main.css";
 
 .script_update {
   width: 70%;

@@ -5,7 +5,8 @@ import "gestalt/dist/gestalt.css";
 import DatePicker from "gestalt-datepicker";
 import { ko } from "date-fns/locale";
 import "gestalt-datepicker/dist/gestalt-datepicker.css";
-import "./Post.css";
+
+import styles from "./Post.module.scss";
 
 import axios from "axios";
 
@@ -123,8 +124,8 @@ const Update = (props) => {
   };
   return (
     <Fragment>
-      <div className="grids">
-        <div className="boxes_post">
+      <div className={styles.grids}>
+        <div className={styles.boxes_post}>
           <Box
             display="flex"
             marginStart={-3}

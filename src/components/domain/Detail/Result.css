@@ -1,4 +1,4 @@
-@import "../Main/Main.css";
+@import "components/domain/Main/Main.css";
 
 .MuiTypography-body1 {
   white-space: pre-wrap;

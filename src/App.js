@@ -10,12 +10,12 @@ import Navigation from "components/layout/Navigation/Navigation";
 import Footer from "components/layout/Footer/Footer";
 import ScriptUpdate from "components/domain/Detail/ScriptUpdate";
 import ScrollToTop from "components/layout/ScrollToTop/ScrollToTop";
-import GlobalStyle from "styles/GlobalStyle";
+import "App.scss";
+
 class App extends Component {
   render() {
     return (
       <Router>
-        <GlobalStyle />
         <ScrollToTop />
         <Navigation />
         <Switch>

@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import "./Main.css";
 import FirstView from "./FirstView.js";
 import Contact from "./Contact.js";
 
@@ -15,6 +14,8 @@ import M_ml from "assets/M_ml.PNG";
 import M_footer from "assets/M_footer.PNG";
 import M_info from "assets/M_info.PNG";
 import M_script from "assets/M_script.PNG";
+
+import "./Main.css";
 
 const Main = () => {
   useEffect(() => {
