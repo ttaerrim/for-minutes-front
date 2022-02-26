@@ -1,21 +1,21 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Main from "./container/Main/Main";
-import MinutesList from "./container/Minute/MinutesList";
-import Post from "./container/Post/Post";
-import About from "./container/Main/About";
-import Detail from "./container/Detail/Detail";
-import Update from "./container/Post/Update";
-import Navigation from "./component/Navigation/Navigation";
-import Footer from "./component/Footer/Footer";
-import ScriptUpdate from "./container/Detail/ScriptUpdate";
-
-import ScrollToTop from "./component/ScrollToTop/ScrollToTop";
-
+import Main from "components/domain/Main/Main";
+import MinutesList from "components/domain/Minute/MinutesList";
+import Post from "components/domain/Post/Post";
+import About from "components/domain/Main/About";
+import Detail from "components/domain/Detail/Detail";
+import Update from "components/domain/Post/Update";
+import Navigation from "components/layout/Navigation/Navigation";
+import Footer from "components/layout/Footer/Footer";
+import ScriptUpdate from "components/domain/Detail/ScriptUpdate";
+import ScrollToTop from "components/layout/ScrollToTop/ScrollToTop";
+import GlobalStyle from "styles/GlobalStyle";
 class App extends Component {
   render() {
     return (
       <Router>
+        <GlobalStyle />
         <ScrollToTop />
         <Navigation />
         <Switch>

@@ -2,21 +2,11 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import SwipeableViews from "react-swipeable-views";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
-import {
-  AppBar,
-  Box,
-  FormControl,
-  Tab,
-  Tabs,
-  TextField,
-  Typography,
-} from "@material-ui/core";
+import { AppBar, Box, Tab, Tabs, Typography } from "@material-ui/core";
 import "./Result.css";
-import Modal from "../Modal/Modal";
-import PdfDownloader from "../Pdf/PdfDownloader.js";
+import PdfDownloader from "components/domain/Pdf/PdfDownloader.js";
 import { Link } from "react-router-dom";
 
-import { Button } from "gestalt";
 import "gestalt/dist/gestalt.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Navigation.css";
-// import logo from "../../images/fmlogo2.svg";
-import logo from "../../images/favicon.ico";
-// import logo from "../../images/txtlogo.svg";
+import logo from "assets/favicon.ico";
 
 function Navigation() {
   const [click, setClick] = useState(false);

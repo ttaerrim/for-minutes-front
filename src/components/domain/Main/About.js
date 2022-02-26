@@ -2,21 +2,21 @@ import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import "./About.css";
-import CardItem from "../Cards/CardItem";
+import CardItem from "components/layout/Cards/CardItem";
 
-import OH_1 from "../../images/OH_1.jpg";
-import OH_2 from "../../images/OH_2.jpg";
-import OH_3 from "../../images/OH_3.PNG";
-import OH_6 from "../../images/OH_6.jpg";
-import PI_1 from "../../images/PI_1.PNG";
-import PI_2 from "../../images/PI_2.PNG";
-import PI_3 from "../../images/PI_3.PNG";
-import T_JJ from "../../images/T_JJ.jpg";
-import T_HY from "../../images/T_HY.jpg";
-import T_TR from "../../images/T_TR.jpg";
-import T_SJ from "../../images/T_SJ.jpg";
-import JDJS from "../../images/JDJS.jpg";
-import Aug from "../../images/888.jpg";
+import OH_1 from "assets/OH_1.jpg";
+import OH_2 from "assets/OH_2.jpg";
+import OH_3 from "assets/OH_3.PNG";
+import OH_6 from "assets/OH_6.jpg";
+import PI_1 from "assets/PI_1.PNG";
+import PI_2 from "assets/PI_2.PNG";
+import PI_3 from "assets/PI_3.PNG";
+import T_JJ from "assets/T_JJ.jpg";
+import T_HY from "assets/T_HY.jpg";
+import T_TR from "assets/T_TR.jpg";
+import T_SJ from "assets/T_SJ.jpg";
+import JDJS from "assets/JDJS.jpg";
+import Aug from "assets/888.jpg";
 
 const About = () => {
   useEffect(() => {

@@ -1,9 +1,8 @@
 import React from "react";
-import "../../App.css";
-import { Button } from "../../component/Button/Button";
+import { Button } from "components/layout/Button/Button";
 import { Link } from "react-router-dom";
 import "./FirstView.css";
-import FW from "../../images/FW_move.mp4";
+import FW from "assets/FW_move.mp4";
 
 function FirstView() {
   return (

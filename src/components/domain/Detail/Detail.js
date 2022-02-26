@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Result from "./Result.js";
-import Spinner from "../../component/Spinner/Spinner";
+import Spinner from "components/layout/Spinner/Spinner";
 import "./Detail.css";
-import { Box, Heading, Table, Text, Flex,Button } from "gestalt";
+import { Box, Flex, Button } from "gestalt";
 import "gestalt/dist/gestalt.css";
 import axios from "axios";
 import { useHistory } from "react-router";
