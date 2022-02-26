@@ -175,6 +175,12 @@ span {
   margin: auto;
 }
 
+.grids {
+  max-width: 80%;
+  margin: auto;
+  margin-bottom: 150px;
+}
+
 /* =============== PREDEFINED CONTENT ALIGN =============== */
 .margin-left {
   margin-left: 1em !important;
