@@ -23,6 +23,7 @@
     "date-fns": "^2.23.0",
     "emailjs-com": "^3.2.0",
     "file-saver": "^2.0.5",
+    "firebase": "^9.6.7",
     "gestalt": "^29.6.2",
     "gestalt-datepicker": "^29.6.2",
     "jquery": "^3.6.0",
