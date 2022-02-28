@@ -1,21 +1,18 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 import { Table, Text, Box } from "gestalt";
 import "gestalt/dist/gestalt.css";
 
-import axios from "axios";
-
 import Minute from "./Minute.js";
 import "./Minute.css";
 import { getDatabase, ref, child, get } from "firebase/database";
+import firebase_app from "firebase_config";
 
-axios.defaults.xsrfCookieName = "csrftoken";
-axios.defaults.xsrfHeaderName = "X-CSRFToken";
 const MinutesList = () => {
   const [minutes, setMinutes] = useState([]);
 
   const renderMinute = async () => {
-    const dbRef = ref(getDatabase());
+    const dbRef = ref(getDatabase(firebase_app));
     await get(child(dbRef, `meeting`))
       .then((snapshot) => {
         if (snapshot.exists()) {
