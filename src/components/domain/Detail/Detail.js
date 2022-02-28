@@ -9,37 +9,22 @@ import axios from "axios";
 import { useHistory } from "react-router";
 
 const Detail = (props) => {
+  const { title, topic, writer, parties, date, meeting_date, file, image } =
+    props.location.state;
+
+  const date_str = new Date(date).toLocaleString("ko-KR", { timeZone: "UTC" });
+  const meeting_date_str = new Date(meeting_date).toLocaleString("ko-KR", {
+    timeZone: "UTC",
+  });
+
   const history = useHistory();
+
   const [pk, setPk] = useState();
-  const [topic, setTopic] = useState();
-  const [title, setTitle] = useState();
-  const [writer, setWriter] = useState("");
-  const [parties, setParties] = useState("");
-  const [meeting_date, setMeetingDate] = useState(undefined);
-  const [date, setDate] = useState();
-  const [file, setFile] = useState();
-  const [image, setImage] = useState();
   const [loading, setLoading] = useState(true);
   const [summaryLoading, setSummaryLoading] = useState(true);
 
   useEffect(() => {
     setPk(props.match.params.id);
-    setTitle(props.location.state.title);
-    setTopic(props.location.state.topic);
-    setMeetingDate(
-      props.location.state.meeting_date.substring(0, 10) +
-        " " +
-        props.location.state.meeting_date.substring(11, 16)
-    );
-    setDate(props.location.state.date.substring(0, 10));
-    setFile(props.location.state.file);
-    setImage(
-      !props.location.state.image
-        ? props.location.state.image
-        : props.location.state.image.replace("media", "static")
-    );
-    setWriter(props.location.state.writer);
-    setParties(props.location.state.parties);
   }, []);
 
   const createResult = async () => {
@@ -137,8 +122,8 @@ const Detail = (props) => {
             <tbody>
               <td>{parties}</td>
               <td>{writer}</td>
-              <td>{date}</td>
-              <td>{meeting_date}</td>
+              <td>{date_str}</td>
+              <td>{meeting_date_str}</td>
             </tbody>
           </table>
           <Flex gap={2} justifyContent="end" wrap>
