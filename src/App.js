@@ -12,29 +12,27 @@ import ScriptUpdate from "components/domain/Detail/ScriptUpdate";
 import ScrollToTop from "components/layout/ScrollToTop/ScrollToTop";
 import "App.scss";
 
-class App extends Component {
-  render() {
-    return (
-      <Router>
-        <ScrollToTop />
-        <Navigation />
-        <Switch>
-          <Route exact path="/" component={Main} />
-          <Route exact path="/post/" component={Post} />
-          <Route exact path="/about/" component={About} />
-          <Route exact path="/minutes/" component={MinutesList} />
-          <Route exact path="/minute/:id/" component={Detail} />
-          <Route exact path="/minute/update/:id/" component={Update} />
-          <Route
-            exact
-            path="/minute/script/update/:id/"
-            component={ScriptUpdate}
-          />
-        </Switch>
-        <Footer />
-      </Router>
-    );
-  }
-}
+const App = () => {
+  return (
+    <Router>
+      <ScrollToTop />
+      <Navigation />
+      <Switch>
+        <Route exact path="/" component={Main} />
+        <Route exact path="/post/" component={Post} />
+        <Route exact path="/about/" component={About} />
+        <Route exact path="/minutes/" component={MinutesList} />
+        <Route exact path="/minute/:id/" component={Detail} />
+        <Route exact path="/minute/update/:id/" component={Update} />
+        <Route
+          exact
+          path="/minute/script/update/:id/"
+          component={ScriptUpdate}
+        />
+      </Switch>
+      <Footer />
+    </Router>
+  );
+};
 
 export default App;
