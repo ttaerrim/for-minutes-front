@@ -77,7 +77,7 @@ const Detail = (props) => {
   };
 
   return (
-    <div class="bg wrapper">
+    <div className="bg wrapper">
       <details open>
         <summary className="summary_boxes"> 회의 정보</summary>
         <div className="container boxes3">
@@ -97,10 +97,12 @@ const Detail = (props) => {
               </tr>
             </thead>
             <tbody>
-              <td>{title}</td>
-              <td></td>
-              <td>{topic}</td>
-              <td></td>
+              <tr>
+                <td>{title}</td>
+                <td></td>
+                <td>{topic}</td>
+                <td></td>
+              </tr>
             </tbody>
           </table>
 
@@ -120,10 +122,12 @@ const Detail = (props) => {
               </tr>
             </thead>
             <tbody>
-              <td>{parties}</td>
-              <td>{writer}</td>
-              <td>{date_str}</td>
-              <td>{meeting_date_str}</td>
+              <tr>
+                <td>{parties}</td>
+                <td>{writer}</td>
+                <td>{date_str}</td>
+                <td>{meeting_date_str}</td>
+              </tr>
             </tbody>
           </table>
           <Flex gap={2} justifyContent="end" wrap>
@@ -149,7 +153,7 @@ const Detail = (props) => {
         </div>
       </details>
 
-      <div class="main-content">
+      <div className="main-content">
         <Box
           display="flex"
           padding={10}
@@ -200,7 +204,7 @@ const Detail = (props) => {
             </Box>
           </Box>
           <Box padding={10}>
-            <Result
+            {/* <Result
               pk={pk}
               title={title}
               topic={topic}
@@ -208,7 +212,7 @@ const Detail = (props) => {
               parties={parties}
               date={date}
               meeting_date={meeting_date}
-            ></Result>
+            ></Result> */}
           </Box>
         </Box>
       </div>

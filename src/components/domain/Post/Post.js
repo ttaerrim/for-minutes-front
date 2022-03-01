@@ -12,6 +12,8 @@ import axios from "axios";
 
 import { useHistory } from "react-router";
 import styles from "./Post.module.scss";
+import { getDatabase, onValue, ref, set } from "firebase/database";
+import firebase_app from "firebase_config";
 
 axios.defaults.xsrfCookieName = "csrftoken";
 axios.defaults.xsrfHeaderName = "X-CSRFToken";
@@ -27,6 +29,7 @@ const Post = () => {
   const [file, setFile] = useState();
   const [image, setImage] = useState();
   const [date, setDate] = useState(new Date());
+  const [id, setId] = useState();
   const history = useHistory();
 
   const createTime = () => {
@@ -60,35 +63,26 @@ const Post = () => {
     return new_date;
   };
 
-  const handleSubmit = async () => {
-    let formData = new FormData();
-
-    formData.append("title", title);
-    formData.append("topic", topic);
-    formData.append("writer", writer);
-    formData.append("parties", parties);
-    formData.append("meeting_date", renderDate(hour, minute));
-    formData.append("file", file);
-    await axios
-      .post("/testapp/meeting/create", formData, {
-        headers: {
-          "Content-Type": "multipart/form-data",
-        },
-      })
-      .then((res) => {
+  const db = getDatabase();
+  const dbRef = ref(db, "meeting/");
+  const writeMeeting = () => {
+    set(ref(db, "meeting/" + id), {
+      date: new Date().toISOString(),
+      file: file,
+      id: id,
+      meeting_date: renderDate(hour, minute),
+      parties: parties,
+      photo: null,
+      title: title,
+      topic: topic,
+      writer: writer,
+    })
+      .then(() => {
         history.push("/minutes");
       })
       .catch((error) => {
-        if (error.response) {
-          console.log(error.response.data);
-          console.log(error.response.status);
-          console.log(error.response.headers);
-        } else if (error.request) {
-          console.log(error.request);
-        } else if (error.message) {
-          console.log(error.message);
-        }
         alert("fail");
+        console.log(error);
       });
   };
 
@@ -97,15 +91,19 @@ const Post = () => {
     setFile(audio);
   };
 
-  const imageHandler = (event) => {
-    const img = event.target.files[0];
-    setImage(img);
-  };
-
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
 
+  useEffect(() => {
+    onValue(
+      dbRef,
+      (snapshot) => {
+        setId(snapshot.val().length);
+      },
+      [db]
+    );
+  });
   return (
     <React.Fragment>
       <div className={styles.grids}>
@@ -232,7 +230,7 @@ const Post = () => {
                     color="black"
                     size="lg"
                     type="submit"
-                    onClick={handleSubmit}
+                    onClick={writeMeeting}
                   />
                 </Box>
               </Box>
