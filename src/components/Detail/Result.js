@@ -4,7 +4,7 @@ import SwipeableViews from "react-swipeable-views";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import { AppBar, Box, Tab, Tabs, Typography } from "@material-ui/core";
 import "./Result.css";
-import PdfDownloader from "components/domain/Pdf/PdfDownloader.js";
+import PdfDownloader from "components/Pdf/PdfDownloader.js";
 import { Link } from "react-router-dom";
 
 import "gestalt/dist/gestalt.css";

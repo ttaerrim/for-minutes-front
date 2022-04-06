@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Result from "./Result.js";
-import Spinner from "components/layout/Spinner/Spinner";
+import Spinner from "components/Spinner/Spinner";
 import "./Detail.css";
 import { Box, Flex, Button } from "gestalt";
 import "gestalt/dist/gestalt.css";

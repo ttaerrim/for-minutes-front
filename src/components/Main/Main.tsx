@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import FirstView from "./FirstView.js";
-import Contact from "./Contact.js";
+import FirstView from "./FirstView";
+import Contact from "./Contact";
 
 import M_history from "assets/M_history.PNG";
 import M_contact from "assets/M_contact.PNG";

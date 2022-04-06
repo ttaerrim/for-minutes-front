@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import "./Contact.css"
+import "./Contact.css";
 import emailjs from "emailjs-com";
 
 const Contact = () => {
@@ -38,7 +38,7 @@ const Contact = () => {
             <div className="col-md-12 col-sm-12">
               <div className="wow fadeInUp" data-wow-delay="0.6s">
                 <form id="contact-form" onSubmit={sendEmail}>
-                  <div class="col-md-4 col-sm-4">
+                  <div className="col-md-4 col-sm-4">
                     <input
                       type="text"
                       className="form-control"
@@ -65,7 +65,7 @@ const Contact = () => {
                       required
                     />
                   </div>
-                  <div class="col-md-12 col-sm-12">
+                  <div className="col-md-12 col-sm-12">
                     <textarea
                       className="form-control"
                       rows="5"
@@ -74,7 +74,7 @@ const Contact = () => {
                       required
                     ></textarea>
                   </div>
-                  <div class="col-md-offset-9 col-md-3 col-sm-offset-3 col-sm-6">
+                  <div className="col-md-offset-9 col-md-3 col-sm-offset-3 col-sm-6">
                     <button
                       id="submit"
                       type="submit"

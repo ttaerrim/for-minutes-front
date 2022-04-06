@@ -67,6 +67,8 @@
     ]
   },
   "devDependencies": {
+    "@types/aos": "^3.0.4",
+    "@types/react-router-dom": "^5.3.3",
     "@types/styled-components": "^5.1.23",
     "exports-loader": "^3.0.0"
   }

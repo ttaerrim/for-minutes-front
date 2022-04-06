@@ -1,15 +1,15 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Main from "components/domain/Main/Main";
-import MinutesList from "components/domain/Minute/MinutesList";
-import Post from "components/domain/Post/Post";
-import About from "components/domain/Main/About";
-import Detail from "components/domain/Detail/Detail";
-import Update from "components/domain/Post/Update";
-import Navigation from "components/layout/Navigation/Navigation";
-import Footer from "components/layout/Footer/Footer";
-import ScriptUpdate from "components/domain/Detail/ScriptUpdate";
-import ScrollToTop from "components/layout/ScrollToTop/ScrollToTop";
+import Main from "components/Main/Main";
+import MinutesList from "components/Minute/MinutesList";
+import Post from "components/Post/Post";
+import About from "components/Main/About";
+import Detail from "components/Detail/Detail";
+import Update from "components/Post/Update";
+import Navigation from "components/Navigation/Navigation";
+import Footer from "components/Footer/Footer";
+import ScriptUpdate from "components/Detail/ScriptUpdate";
+import ScrollToTop from "components/ScrollToTop/ScrollToTop";
 import "App.scss";
 
 const App = () => {

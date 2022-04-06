@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import "./About.css";
-import CardItem from "components/layout/Cards/CardItem";
+import CardItem from "components/Cards/CardItem";
 
 import OH_1 from "assets/OH_1.jpg";
 import OH_2 from "assets/OH_2.jpg";
