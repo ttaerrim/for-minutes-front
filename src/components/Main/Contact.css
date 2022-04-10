@@ -1,41 +1,41 @@
-@import "./Main.css";
+/* @import "components/Main/Main.module.scss"; */
 /*---------------------------------------
   Contact section              
 -----------------------------------------*/
 
 #contact .form-control {
-    border-radius: 0px;
-    border-color: #f0f0f0;
-    box-shadow: none;
-    font-size: 16px;
-    margin-top: 12px;
-    margin-bottom: 12px;
-    -webkit-transition: all ease-in-out 0.4s;
-    transition: all ease-in-out 0.4s;
-  }
-  
-  #contact .form-control:focus {
-    border-bottom: 2px solid #999999;
-  }
-  
-  #contact input {
-    height: 55px;
-    border: none;
-    border-bottom: 1px solid #f0f0f0;
-  }
-  
-  #contact button#submit {
-    background: #00204b;
-    border: none;
-    border-radius: 50px;
-    color: #ffffff;
-    font-weight: 300;
-    height: 55px;
-    padding-bottom: 10px;
-    margin-top: 24px;
-  }
-  
-  #contact button#submit:hover {
-    background: #a2c3ff;
-    color: #ffffff;
-  }
+  border-radius: 0px;
+  border-color: #f0f0f0;
+  box-shadow: none;
+  font-size: 16px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
+}
+
+#contact .form-control:focus {
+  border-bottom: 2px solid #999999;
+}
+
+#contact input {
+  height: 55px;
+  border: none;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+#contact button#submit {
+  background: #00204b;
+  border: none;
+  border-radius: 50px;
+  color: #ffffff;
+  font-weight: 300;
+  height: 55px;
+  padding-bottom: 10px;
+  margin-top: 24px;
+}
+
+#contact button#submit:hover {
+  background: #a2c3ff;
+  color: #ffffff;
+}

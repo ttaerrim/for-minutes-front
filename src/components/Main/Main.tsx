@@ -15,7 +15,7 @@ import M_footer from "assets/M_footer.PNG";
 import M_info from "assets/M_info.PNG";
 import M_script from "assets/M_script.PNG";
 
-import "./Main.css";
+import styles from "./Main.module.scss";
 
 const Main = () => {
   useEffect(() => {
@@ -25,57 +25,57 @@ const Main = () => {
   return (
     <div>
       <FirstView />
-      <div className="bg wrapper">
-        <div className="main-contents">
-          <div className="grids">
-            <div data-aos="fade-up" className="boxes">
+      <div className={`${styles.bg} wrapper`}>
+        <div className={styles["main-contents"]}>
+          <div className={styles.grids}>
+            <div data-aos="fade-up" className={styles.boxes}>
               <section id="nino-story">
-                <div className="container">
-                  <h2 className="nino-sectionHeading">
+                <div className={styles.container}>
+                  <h2 className={styles["nino-sectionHeading"]}>
                     A Little Bit Of Information
                   </h2>
-                  <p className="nino-sectionDesc">
+                  <p className={styles["nino-sectionDesc"]}>
                     <strong>
                       Artificial intelligence meeting minutes summary service
                     </strong>
                   </p>
-                  <p className="nino-sectionDesc">
+                  <p className={styles["nino-sectionDesc"]}>
                     "인공지능 회의 요약 서비스" 서비스
                   </p>
                 </div>
               </section>
             </div>
 
-            <div data-aos="fade-up" className="boxes">
-              <div className="gallery">
-                <div className="img">
+            <div data-aos="fade-up" className={styles.boxes}>
+              <div className={styles.gallery}>
+                <div className={styles.img}>
                   <img src={M_fv} />
                 </div>
-                <div className="img">
+                <div className={styles.img}>
                   <img src={M_history} />
                 </div>
-                <div className="img">
+                <div className={styles.img}>
                   <img src={M_contact} />
                 </div>
-                <div className="img">
+                <div className={styles.img}>
                   <img src={M_team} />
                 </div>
-                <div className="img">
+                <div className={styles.img}>
                   <img src={M_participate} />
                 </div>
-                <div className="img">
+                <div className={styles.img}>
                   <img src={M_post} />
                 </div>
-                <div className="img">
+                <div className={styles.img}>
                   <img src={M_ml} />
                 </div>
-                <div className="img">
+                <div className={styles.img}>
                   <img src={M_footer} />
                 </div>
-                <div className="img">
+                <div className={styles.img}>
                   <img src={M_info} />
                 </div>
-                <div className="img">
+                <div className={styles.img}>
                   <img src={M_script} />
                 </div>
               </div>
