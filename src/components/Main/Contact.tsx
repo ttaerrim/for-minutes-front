@@ -1,36 +1,35 @@
-import React, { useEffect } from "react";
-import Aos from "aos";
+import React from "react";
 import "aos/dist/aos.css";
-import "./Contact.css";
+import styles from "./Contact.module.scss";
 import emailjs from "emailjs-com";
 
 const Contact = () => {
-  function sendEmail(e) {
+  const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
 
     emailjs
       .sendForm(
         "service_72ze72f",
         "template_dv4wyku",
-        e.target,
+        e.target as HTMLFormElement,
         "user_r4ISSSGenIiDDkdohUINy"
       )
       .then((res) => {
         console.log(res);
       })
-      .catch((err) => console.log(err));
-  }
+      .catch((err) => alert(err));
+  };
   function refreshPage() {
     window.location.reload();
   }
   return (
-    <div data-aos="fade-ip" className="boxes">
-      <section id="contact">
-        <div className="container">
-          <div className="row">
+    <div data-aos="fade-ip" className={styles.boxes}>
+      <section className={styles.contact}>
+        <div className={styles.container}>
+          <div className={styles.row}>
             <div className="col-md-12 col-sm-12">
               <div className="wow fadeInUp section-title" data-wow-delay="0.2s">
-                <h2 className="nino-sectionHeading">Contact Us</h2>
+                <h2 className={styles["nino-sectionHeading"]}>Contact Us</h2>
                 <p>To. TEAM JDJS</p>
               </div>
             </div>
@@ -41,7 +40,7 @@ const Contact = () => {
                   <div className="col-md-4 col-sm-4">
                     <input
                       type="text"
-                      className="form-control"
+                      className={styles["form-control"]}
                       name="name"
                       placeholder="Name"
                       required
@@ -50,7 +49,7 @@ const Contact = () => {
                   <div className="col-md-4 col-sm-4">
                     <input
                       type="email"
-                      className="form-control"
+                      className={styles["form-control"]}
                       name="email"
                       placeholder="Email"
                       required
@@ -59,7 +58,7 @@ const Contact = () => {
                   <div className="col-md-4 col-sm-4">
                     <input
                       type="text"
-                      className="form-control"
+                      className={styles["form-control"]}
                       name="subject"
                       placeholder="Subject"
                       required
@@ -67,8 +66,8 @@ const Contact = () => {
                   </div>
                   <div className="col-md-12 col-sm-12">
                     <textarea
-                      className="form-control"
-                      rows="5"
+                      className={styles["form-control"]}
+                      rows={5}
                       name="message"
                       placeholder="Message"
                       required
@@ -78,7 +77,7 @@ const Contact = () => {
                     <button
                       id="submit"
                       type="submit"
-                      className="form-control"
+                      className={`${styles["form-control"]} `}
                       name="submit"
                       onClick={refreshPage}
                     >

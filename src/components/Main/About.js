@@ -183,7 +183,7 @@ const About = () => {
                   </div>
                   <div className="col-md-4 col-sm-4">
                     <div className="item">
-                      <a class="overlay">
+                      <a className="overlay">
                         <span className="content">
                           <i className="mdi mdi-airplay nino-icon"></i>
                           한국방송 미디어 공학회 <br />

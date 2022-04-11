@@ -1,0 +1,85 @@
+/* @import "components/Main/Main.module.scss"; */
+/*---------------------------------------
+  Contact section              
+-----------------------------------------*/
+.boxes {
+  margin: 20px;
+  margin-top: 50px;
+  overflow: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+}
+.contact {
+  .form-control {
+    border-radius: 0px;
+    border-color: #f0f0f0;
+    box-shadow: none;
+    font-size: 16px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    -webkit-transition: all ease-in-out 0.4s;
+    transition: all ease-in-out 0.4s;
+
+    &:focus {
+      border-bottom: 2px solid #999999;
+    }
+  }
+  input {
+    height: 55px;
+    border: none;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 5px;
+  }
+  textarea {
+    width: 100%;
+    padding: 5px;
+  }
+  button[type="submit"] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #00204b;
+    border: none;
+    border-radius: 50px;
+    color: #ffffff;
+    font-weight: 300;
+    height: 55px;
+    width: 15rem;
+    padding: 0 3rem 10px 3rem;
+    margin-top: 24px;
+    &:hover {
+      background: #a2c3ff;
+      color: #ffffff;
+    }
+  }
+}
+
+.nino-sectionHeading {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 1;
+  position: relative;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #333;
+  &:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 50px;
+    height: 2px;
+    background: #3e92ff;
+    transform: translateX(-50%);
+  }
+  .nino-subHeading {
+    display: block;
+    text-transform: none;
+    font-weight: 400;
+    font-family: "Kaushan Script", cursive;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+}
