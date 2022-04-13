@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import "./About.css";
+import styles from "./About.module.scss";
 import CardItem from "components/Cards/CardItem";
 
 import OH_1 from "assets/OH_1.jpg";
@@ -25,26 +25,26 @@ const About = () => {
 
   return (
     <div>
-      <div className="grids">
-        <div data-aos="fade-up" className="boxes">
-          <section id="nino-latestBlog">
+      <div className={styles.grids}>
+        <div data-aos="fade-up" className={styles.boxes}>
+          <section id={styles["nino-latestBlog"]}>
             <div className="container">
-              <h2 className="nino-sectionHeading">Our History</h2>
+              <h2 className={styles["nino-sectionHeading"]}>Our History</h2>
               <div className="sectionContent">
                 <div className="row">
                   <div className="col-md-4 col-sm-4">
                     <article>
-                      <div className="articleThumb">
+                      <div className={styles.articleThumb}>
                         <img src={OH_1} alt="" />
-                        <div className="date">
-                          <span className="number">27</span>
-                          <span className="text">Mar</span>
+                        <div className={styles.date}>
+                          <span className={styles.number}>27</span>
+                          <span className={styles.text}>Mar</span>
                         </div>
                       </div>
-                      <h3 className="articleTitle">
+                      <h3 className={styles.articleTitle}>
                         <div>프로젝트 기획 발표</div>
                       </h3>
-                      <p className="articleDesc">
+                      <p className={styles.articleDesc}>
                         인공지능 회의 요약 서비스 'For-Minutes' 기획 <br /> 적용
                         기술에 대한 자료 수집
                       </p>
@@ -52,17 +52,17 @@ const About = () => {
                   </div>
                   <div className="col-md-4 col-sm-4">
                     <article>
-                      <div className="articleThumb">
+                      <div className={styles.articleThumb}>
                         <img src={OH_2} alt="" />
-                        <div className="date">
-                          <span className="number">6</span>
-                          <span className="text">May</span>
+                        <div className={styles.date}>
+                          <span className={styles.number}>6</span>
+                          <span className={styles.text}>May</span>
                         </div>
                       </div>
-                      <h3 className="articleTitle">
+                      <h3 className={styles.articleTitle}>
                         <div>프로젝트 진행 및 회의</div>
                       </h3>
-                      <p className="articleDesc">
+                      <p className={styles.articleDesc}>
                         프로젝트의 전반적인 기반 구축과 각 담당 포지션
                         프로그래밍 진행
                       </p>
@@ -70,17 +70,19 @@ const About = () => {
                   </div>
                   <div className="col-md-4 col-sm-4">
                     <article>
-                      <div className="articleThumb">
+                      <div className={styles.articleThumb}>
                         <img src={OH_3} alt="" />
-                        <div className="date">
-                          <span className="number">21</span>
-                          <span className="text">June</span>
+                        <div className={styles.date}>
+                          <span className={styles.number}>21</span>
+                          <span className={styles.text}>June</span>
                         </div>
                       </div>
-                      <h3 className="articleTitle">
+                      <h3 className={styles.articleTitle}>
                         <div>캡스톤 1학기 가전시</div>
                       </h3>
-                      <p className="articleDesc">프로젝트 진행 상황 발표</p>
+                      <p className={styles.articleDesc}>
+                        프로젝트 진행 상황 발표
+                      </p>
                     </article>
                   </div>
                 </div>
@@ -92,51 +94,51 @@ const About = () => {
                 <div className="row">
                   <div className="col-md-4 col-sm-4">
                     <article>
-                      <div className="articleThumb">
+                      <div className={styles.articleThumb}>
                         <img src={Aug} alt="" />
-                        <div className="date">
-                          <span className="number">14</span>
-                          <span className="text">Aug</span>
+                        <div className={styles.date}>
+                          <span className={styles.number}>14</span>
+                          <span className={styles.text}>Aug</span>
                         </div>
                       </div>
-                      <h3 className="articleTitle">
+                      <h3 className={styles.articleTitle}>
                         <div>여름 방학 스터디 </div>
                       </h3>
-                      <p className="articleDesc">
+                      <p className={styles.articleDesc}>
                         캡스톤 디자인 수업 진행 사항 보고 및 발표 준비
                       </p>
                     </article>
                   </div>
                   <div className="col-md-4 col-sm-4">
                     <article>
-                      <div className="articleThumb">
+                      <div className={styles.articleThumb}>
                         <img src={JDJS} alt="" />
-                        <div className="date">
-                          <span className="number">27</span>
-                          <span className="text">Sep</span>
+                        <div className={styles.date}>
+                          <span className={styles.number}>27</span>
+                          <span className={styles.text}>Sep</span>
                         </div>
                       </div>
-                      <h3 className="articleTitle">
+                      <h3 className={styles.articleTitle}>
                         <div>졸업작품전시회 준비 </div>
                       </h3>
-                      <p className="articleDesc">
+                      <p className={styles.articleDesc}>
                         졸업작품전시회 단체 프로필 촬영
                       </p>
                     </article>
                   </div>
                   <div className="col-md-4 col-sm-4">
                     <article>
-                      <div className="articleThumb">
+                      <div className={styles.articleThumb}>
                         <img src={OH_6} alt="" />
-                        <div className="date">
-                          <span className="number">27</span>
-                          <span className="text">Oct</span>
+                        <div className={styles.date}>
+                          <span className={styles.number}>27</span>
+                          <span className={styles.text}>Oct</span>
                         </div>
                       </div>
-                      <h3 className="articleTitle">
+                      <h3 className={styles.articleTitle}>
                         <div>배포 및 졸업작품전시회 </div>
                       </h3>
-                      <p className="articleDesc">
+                      <p className={styles.articleDesc}>
                         [For-minutes] 서비스 배포와 10월 졸업 작품 전시회
                       </p>
                     </article>
@@ -147,22 +149,24 @@ const About = () => {
           </section>
         </div>
 
-        <div data-aos="fade-up" className="boxes">
-          <section id="nino-story">
+        <div data-aos="fade-up" className={styles.boxes}>
+          <section id={styles["nino-story"]}>
             <div className="container">
-              <h2 className="nino-sectionHeading">Paticipate In</h2>
-              <p className="nino-sectionDesc">
+              <h2 className={styles["nino-sectionHeading"]}>Paticipate In</h2>
+              <p className={styles["nino-sectionDesc"]}>
                 인공지능 회의 요약 서비스 "For-minutes"
                 <br />
                 참여 중인 프로젝트
               </p>
               <div className="sectionContent">
-                <div className="row nino-hoverEffect">
+                <div className={`row ${styles["nino-hoverEffect"]}`}>
                   <div className="col-md-4 col-sm-4">
-                    <div className="item">
-                      <a className="overlay">
-                        <span className="content">
-                          <i className="mdi mdi-account-multiple nino-icon"></i>
+                    <div className={styles.item}>
+                      <a className={styles.overlay}>
+                        <span className={styles.content}>
+                          <i
+                            className={`mdi mdi-account-multiple ${styles["nino-icon"]}`}
+                          ></i>
                           덕성여자대학교 <br />
                           졸업 작품 프로젝트
                         </span>
@@ -171,10 +175,12 @@ const About = () => {
                     </div>
                   </div>
                   <div className="col-md-4 col-sm-4">
-                    <div className="item">
-                      <a className="overlay">
-                        <span className="content">
-                          <i className="mdi mdi-image-filter-center-focus-weak nino-icon"></i>
+                    <div className={styles.item}>
+                      <a className={styles.overlay}>
+                        <span className={styles.content}>
+                          <i
+                            className={`mdi mdi-image-filter-center-focus-weak ${styles["nino-icon"]}`}
+                          ></i>
                           한이음 ICT 멘토링
                         </span>
                         <img src={PI_2} alt="" />
@@ -182,10 +188,12 @@ const About = () => {
                     </div>
                   </div>
                   <div className="col-md-4 col-sm-4">
-                    <div className="item">
-                      <a className="overlay">
-                        <span className="content">
-                          <i className="mdi mdi-airplay nino-icon"></i>
+                    <div className={styles.item}>
+                      <a className={styles.overlay}>
+                        <span className={styles.content}>
+                          <i
+                            className={`mdi mdi-airplay ${styles["nino-icon"]}`}
+                          ></i>
                           한국방송 미디어 공학회 <br />
                           2021년 추계학술대회
                         </span>
@@ -199,7 +207,7 @@ const About = () => {
           </section>
         </div>
 
-        <div data-aos="fade-up" className="boxes">
+        <div data-aos="fade-up" className={styles.boxes}>
           <section id="work">
             <div className="container">
               <div className="row">
@@ -208,7 +216,7 @@ const About = () => {
                     className="wow fadeInUp section-title"
                     data-wow-delay="0.2s"
                   >
-                    <h2 className="nino-sectionHeading">Team JDJS</h2>
+                    <h2 className={styles["nino-sectionHeading"]}>Team JDJS</h2>
                   </div>
                 </div>
                 <CardItem />
@@ -217,20 +225,24 @@ const About = () => {
           </section>
         </div>
 
-        <div data-aos="fade-up" className="boxes">
-          <section id="nino-happyClient">
-            <div className="container">
-              <h2 className="nino-sectionHeading">What we say</h2>
+        <div data-aos="fade-up" className={styles.boxes}>
+          <div className="container">
+            <h2 className={styles["nino-sectionHeading"]}>What we say</h2>
+            <section id={styles["nino-happyClient"]}>
               <div className="sectionContent">
                 <div className="row">
                   <div className="col-md-6">
-                    <div layout="row" class="item">
-                      <div className="nino-avatar fsr">
-                        <img className="img-circle" src={T_TR} alt="" />
+                    <div className={styles.item}>
+                      <div className={styles["nino-avatar fsr"]}>
+                        <img
+                          className={styles["img-circle"]}
+                          src={T_TR}
+                          alt=""
+                        />
                       </div>
                       <div className="info">
-                        <h4 className="name">Lee Tae Rim</h4>
-                        <span className="regency">Frontend</span>
+                        <h4 className={styles.name}>Lee Tae Rim</h4>
+                        <span className={styles.regency}>Frontend</span>
                         <p className="desc">
                           올해 초부터 쉼 없이 달려온 우리 팀, 정말 수고 많았어!
                           졸업 작품을 완성할 수 있을지도 의문이 들었던
@@ -243,13 +255,17 @@ const About = () => {
                     </div>
                   </div>
                   <div className="col-md-6">
-                    <div layout="row" class="item">
+                    <div className={styles.item}>
                       <div className="nino-avatar fsr">
-                        <img className="img-circle" src={T_JJ} alt="" />
+                        <img
+                          className={styles["img-circle"]}
+                          src={T_JJ}
+                          alt=""
+                        />
                       </div>
-                      <div className="info">
-                        <h4 className="name">Yoo Jin Joo</h4>
-                        <span className="regency">Frontend</span>
+                      <div className={styles.info}>
+                        <h4 className={styles.name}>Yoo Jin Joo</h4>
+                        <span className={styles.regency}>Frontend</span>
                         <p className="desc">
                           우리 졸업할 수 있을까? 했던 날이 엊그제 같은데 어느새
                           10월이 되어 우리가 졸업전시회를 하다니 너무 뿌듯하다^^
@@ -264,13 +280,17 @@ const About = () => {
                 </div>
                 <div className="row">
                   <div className="col-md-6">
-                    <div layout="row" class="item">
+                    <div className={styles.item}>
                       <div className="nino-avatar fsr">
-                        <img className="img-circle" src={T_SJ} alt="" />
+                        <img
+                          className={styles["img-circle"]}
+                          src={T_SJ}
+                          alt=""
+                        />
                       </div>
-                      <div className="info">
-                        <h4 className="name">Kang Su Ji</h4>
-                        <span className="regency">Backend</span>
+                      <div className={styles.info}>
+                        <h4 className={styles.name}>Kang Su Ji</h4>
+                        <span className={styles.regency}>Backend</span>
                         <p className="desc">
                           쉼쉼없는 여름 방학을 지나 가을이 다 되어가는 지금까지
                           함께 고생해준 우리 팀원 모두 너무 고마워 ! 어려움도
@@ -282,13 +302,17 @@ const About = () => {
                     </div>
                   </div>
                   <div className="col-md-6">
-                    <div layout="row" class="item">
+                    <div className={styles.item}>
                       <div className="nino-avatar fsr">
-                        <img className="img-circle" src={T_HY} alt="" />
+                        <img
+                          className={styles["img-circle"]}
+                          src={T_HY}
+                          alt=""
+                        />
                       </div>
-                      <div className="info">
-                        <h4 className="name">Lee Ha Yeon</h4>
-                        <span className="regency">Backend</span>
+                      <div className={styles.info}>
+                        <h4 className={styles.name}>Lee Ha Yeon</h4>
+                        <span className={styles.regency}>Backend</span>
                         <p className="desc">
                           우리 1년 동안 참 고생했다!! 리더 태림이, react 장인
                           진주 언니, 깃 장인 수지 정말 다들 최고야 너무너무
@@ -303,8 +327,8 @@ const About = () => {
                   </div>
                 </div>
               </div>
-            </div>
-          </section>
+            </section>
+          </div>
         </div>
       </div>
     </div>

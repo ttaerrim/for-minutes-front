@@ -1,4 +1,17 @@
 /* @import "components/Main/Main.module.scss"; */
+.grids {
+  max-width: 80%;
+  margin: auto;
+  margin-bottom: 150px;
+}
+.boxes {
+  margin: 20px;
+  margin-top: 50px;
+  overflow: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+}
 /* =============== SECTION LATEST BLOG =============== */
 #nino-latestBlog article .articleThumb {
   position: relative;
@@ -175,6 +188,40 @@
   width: 48px;
   height: 2.5px;
   background: #12427a;
+}
+
+.nino-sectionHeading {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 1;
+  position: relative;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #333;
+  &:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 50px;
+    height: 2px;
+    background: #3e92ff;
+    transform: translateX(-50%);
+  }
+  .nino-subHeading {
+    display: block;
+    text-transform: none;
+    font-weight: 400;
+    font-family: "Kaushan Script", cursive;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+}
+.nino-sectionDesc {
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto 40px;
 }
 
 /* =============== HOVER EFFECT =============== */

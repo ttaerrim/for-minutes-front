@@ -17,7 +17,7 @@ const Contact = () => {
       .then((res) => {
         console.log(res);
       })
-      .catch((err) => alert(err));
+      .catch((err) => console.log(err));
   };
   function refreshPage() {
     window.location.reload();
